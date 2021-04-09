@@ -12,10 +12,16 @@
         <div class="title">
             <h1>How many days old are you?</h1>
         </div>
-        <div class="button-container">
-            <div><button onclick="getBirthDate()">Click me</button></div>
-            <div><button onclick="reset()">Reset</button></div>
-        </div>
+        <form class="date" action="getBirthDate(" birth-date ")">
+            <label class="span">Enter Your Birth Date: 
+                <input type="date" name: "birth-date" value="birth-date">
+            </label>
+            <div class="button-container">
+                <div><button class="button" type="submit">Submit Birth Date</button></div>
+                <div><button class="button" type="reset" onclick="reset()">Reset</button></div>
+            </div>
+        </form>
+
         <div class="result-div">
             <h2 id="result">Your age will be displayed here!</h2>
         </div>
